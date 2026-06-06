@@ -6,6 +6,6 @@ services:
     restart: unless-stopped
     extra_hosts:
       - 'host.docker.internal:host-gateway'
-    env_file: .env
+    env_file: stack.env
     environment:
       - PORT=${PORT:-3000}
